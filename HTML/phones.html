@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar -->
+    <div class="bg-black w-full h-auto md:h-24 flex flex-col md:flex-row items-center px-4 py-2">
+        <div class="flex justify-between w-full md:w-auto">
+            <a href="home.html">
+                <img src="/Image/logo.png" alt="logo" class="border border-black rounded-full w-24 h-16">
+            </a>
+            <h1 class="text-white text-2xl italic font-serif ml-4 mt-4 md:ml-2">R8TIFY.com</h1>
+            <!-- Hamburger Menu -->
+            <button id="menu-toggle" class="text-white text-3xl md:hidden ml-auto">
+                ☰
+            </button>
+        </div>
+        
+        <div id="menu" class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center mt-4 md:mt-0">
+            <div class="flex flex-col md:flex-row md:ml-96 w-full md:w-auto items-center">
+                <div class="flex w-full md:w-auto">
+                    <input type="text" placeholder="Search" class="h-10 w-full md:w-[400px] rounded-l-full pl-4 text-lg">
+                    <button class="h-10 w-12 bg-white border-2 border-gray-300 rounded-r-full flex items-center justify-center">
+                        <img src="/Image/search.png" alt="Search" class="h-6 w-6">
+                    </button>
+                </div>
+                <a href="categories.html" class="text-lg font-bold rounded px-4 h-10 py-1 bg-white mt-2 md:mt-0 md:ml-24">Categories</a>
+                <a href="#Trending Insightssss" class="text-lg font-bold rounded px-4 h-10 py-1 bg-white mt-2 md:mt-0 md:ml-24">Trending Insights</a>
+            </div>
+            <div class="flex flex-col md:flex-row items-center mt-4 ml-4 md:mt-0">
+                <h4 class="text-white">Brian O'Conner</h4>
+                <div class="bg-gray-400 w-12 h-12 rounded-full ml-4">
+                    <a href="profile.html"><img src="/Image/brian.jpeg" alt="" class="rounded-full"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+
+    <!-- Products Section -->
+    <div class="flex flex-col md:flex-row justify-between items-center text-center h-auto p-6">
+        <p class="text-4xl mt-3">Products</p>
+        <a href="phones.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Smartphones</div></a>
+        <a href="laptops.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Laptops</div></a>
+        <a href="console.html"><div class="bg-black w-52 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Gaming Consoles</div></a>
+        <a href="camera.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Camera</div></a>
+        <a href="speakers.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Speakers</div></a>
+    </div>
+
+    <!-- contentt -->
+    <!-- Samsung Section -->
+<div class="w-full max-w-7xl mx-auto border-black border-2 rounded-3xl p-6 mb-6">
+    <!-- Product Info & Images -->
+    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 md:justify-between">
+        <!-- Product Info -->
+        <div class="flex items-center space-x-4">
+            <img src="/Image/Samsung Galaxy S24 Ultra.jpeg" alt="Samsung Galaxy S23 Ultra" class="rounded-full w-16 h-16 md:w-24 md:h-24">
+            <p class="text-md">
+                <span class="text-xl font-bold">Samsung Galaxy S23 Ultra</span>  <br>
+                <span>4.0 ⭐</span><br>
+                <span>6.8-inch Dynamic AMOLED 2X</span><br>
+                <span>Qualcomm Snapdragon 8 Gen 2 (4nm)</span><br>
+                <span>RAM: 8GB/12GB</span><br>
+                <span>Capacity: 5000mAh</span><br>
+            </p>
+        </div>
+
+        <!-- Product Images & Price -->
+        <div class="flex flex-wrap md:flex-nowrap mt-3 h-36 space-x-4 justify-center">
+            <img src="/Image/Samsung Galaxy S24 Ultra.jpeg" alt="Samsung Galaxy S23 Ultra" class="w-32 h-32">
+            <img src="/Image/SAMSUNG Galaxy A15 5G A Series Cell Phone, 128GB Unlocked Android Smartphone, AMOLED Display.jpeg" alt="Samsung Galaxy A15" class="w-32 h-32">
+            <p class="mt-10 text-3xl bg-yellow-500 h-10 px-4 flex items-center">$157</p>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="mt-4 w-full">
+        <div class="flex flex-wrap md:flex-nowrap items-center justify-between">
+            <!-- Reviewer Info -->
+            <div class="h-24 flex items-center">
+                <img src="/Image/Han Lue.jpeg" alt="Han Lue" class="rounded-full w-14 h-16">
+                <p class="text-2xl ml-4">Han Lue</p>
+                <img class="w-36 ml-2" src="/Image/1starr.png" alt="1-star rating">
+            </div>
+
+            <!-- Write Review Button -->
+            <button class="bg-black text-white text-xl font-bold w-full md:w-80 h-14 rounded-full mt-4 md:mt-0">
+                <a href="review.html">Write a Review</a>
+            </button>
+        </div>
+
+        <!-- Review Content -->
+        <div class="mt-4">
+            <span class="font-bold text-black text-lg">Very poor UX choices</span>
+            <p class="text-xl">The camera quality is worse than my five-year-old Oppo Find X2 Pro. You cannot turn off most 'image enhancements,' and third-party camera apps aren't allowed to make use of the full sensor.</p>
+        </div>
+
+        <!-- Like & View More Section -->
+        <div class="flex items-center mt-4">
+            <button class="thumbs-up text-2xl ml-4">
+                <img src="/Image/Like silhouette.jpeg" alt="like" class="w-6">
+            </button>
+            <p class="ml-1">3.5k</p>
+            <button class="bg-black text-white w-24 ml-4 h-8 rounded-full">View more</button>
+        </div>
+    </div>
+</div>
+
+<!-- Realme Section -->
+<div class="w-full max-w-7xl mx-auto border-black border-2 rounded-3xl p-6 mb-6">
+    <!-- Product Info & Images -->
+    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 md:justify-between">
+        <!-- Product Info -->
+        <div class="flex items-center space-x-4">
+            <img src="/Image/Smartphone Realme Note 50 RMX3834 4GB de RAM _ 128GB _ Tela 6_74_ _ Dual Sim LTE - Sky Azul.jpeg" 
+                 alt="Realme Note 50" 
+                 class="rounded-full w-16 h-16 md:w-24 md:h-24">
+            <p class="text-md">
+                <span class="text-xl font-bold">Realme Note 50</span><br>
+                <span>3.0 ⭐</span><br>
+                <span>6.74-inch IPS LCD</span><br>
+                <span>Unisoc Tiger T612 (12nm)</span><br>
+                <span>RAM: 8GB/12GB</span><br>
+                <span>Capacity: 5000mAh</span><br>
+            </p>
+        </div>
+
+        <!-- Product Images & Price -->
+        <div class="flex flex-wrap md:flex-nowrap mt-3 h-36 space-x-4 justify-center">
+            <img src="/Image/Smartphone Realme C61 RMX3930 256GB 6GB RAM Dual SIM NFC Tela 6_74_ (Dark Green) - Verde.jpeg" 
+                 alt="Realme C61" 
+                 class="w-32 h-32">
+            <img src="/Image/Smartphone Realme Note 50 RMX3834 4GB de RAM _ 128GB _ Tela 6_74_ _ Dual Sim LTE - Sky Azul.jpeg" 
+                 alt="Realme Note 50" 
+                 class="w-32 h-32">
+            <p class="mt-10 text-3xl bg-yellow-500 h-10 px-4 flex items-center">$207</p>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="mt-4 w-full">
+        <div class="flex flex-wrap md:flex-nowrap items-center justify-between">
+            <!-- Reviewer Info -->
+            <div class="h-24 flex items-center">
+                <img src="/Image/brian.jpeg" 
+                     alt="Brian O'Conner" 
+                     class="rounded-full w-14 h-16">
+                <p class="text-2xl ml-4">Brian O'Conner</p>
+                <img class="w-36 ml-2" 
+                     src="/Image/3starr.png" 
+                     alt="3-star rating">
+            </div>
+
+            <!-- Write Review Button -->
+            <button class="bg-black text-white text-xl font-bold w-full md:w-80 h-14 rounded-full mt-4 md:mt-0">
+                <a href="review.html">Write a Review</a>
+            </button>
+        </div>
+
+        <!-- Review Content -->
+        <div class="mt-4">
+            <span class="font-bold text-black text-lg">Love the phone, Good Price</span>
+            <p class="text-xl">Phone has more than met my expectations. Would have preferred a little more information re day to day operations rather than having to download a 130 page handbook. Would definitely recommend.</p>
+        </div>
+
+        <!-- Like & View More Section -->
+        <div class="flex items-center mt-4">
+            <button class="thumbs-up text-2xl ml-4">
+                <img src="/Image/Like silhouette.jpeg" 
+                     alt="like" 
+                     class="w-6">
+            </button>
+            <p class="ml-1">3.5k</p>
+            <button class="bg-black text-white w-24 ml-4 h-8 rounded-full">View more</button>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- Apple Section -->
+<div class="w-full max-w-7xl mx-auto border-black border-2 rounded-3xl p-6 mb-6">
+    <!-- Product Info & Images -->
+    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 md:justify-between">
+        <!-- Product Info -->
+        <div class="flex items-center space-x-4">
+            <img src="/Image/Apple iPhone 14.jpeg" 
+                 alt="Apple iPhone 14" 
+                 class="rounded-full w-16 h-16 md:w-24 md:h-24">
+            <p class="text-md">
+                <span class="text-xl font-bold">Apple iPhone 14</span><br>
+                <span>4.5 ⭐</span><br>
+                <span>6.1-inch Super Retina XDR OLED</span><br>
+                <span>Apple A15 Bionic chip (5-core GPU)</span><br>
+                <span>RAM: 6GB</span><br>
+                <span>Capacity: ~3279mAh</span><br>
+            </p>
+        </div>
+
+        <!-- Product Images & Price -->
+        <div class="flex flex-wrap md:flex-nowrap mt-3 h-36 space-x-4 justify-center">
+            <img src="/Image/Apple iPhone 14.jpeg" 
+                 alt="iPhone 14" 
+                 class="w-32 h-32">
+            <img src="/Image/Apple iPhone 14 Pro And Pro Max Live Image; Check Out The Latest Renders Here.jpeg" 
+                 alt="iPhone 14 Pro" 
+                 class="w-32 h-32">
+            <p class="mt-10 text-3xl bg-yellow-500 h-10 px-4 flex items-center">$308</p>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="mt-4 w-full">
+        <div class="flex flex-wrap md:flex-nowrap items-center justify-between">
+            <!-- Reviewer Info -->
+            <div class="h-24 flex items-center">
+                <img src="/Image/brian.jpeg" 
+                     alt="Brian O'Conner" 
+                     class="rounded-full w-14 h-16">
+                <p class="text-2xl ml-4">Brian O'Conner</p>
+                <img class="w-36 ml-2" 
+                     src="/Image/3starr.png" 
+                     alt="3-star rating">
+            </div>
+
+            <!-- Write Review Button -->
+            <button class="bg-black text-white text-xl font-bold w-full md:w-80 h-14 rounded-full mt-4 md:mt-0">
+                <a href="review.html">Write a Review</a>
+            </button>
+        </div>
+
+        <!-- Review Content -->
+        <div class="mt-4">
+            <span class="font-bold text-black text-lg">Love the phone, Good Price</span>
+            <p class="text-xl">Phone has more than met my expectations. Would have preferred a little more information re day to day operations rather than having to download a 130 page handbook. Would definitely recommend.</p>
+        </div>
+
+        <!-- Like & View More Section -->
+        <div class="flex items-center mt-4">
+            <button class="thumbs-up text-2xl ml-4">
+                <img src="/Image/Like silhouette.jpeg" 
+                     alt="like" 
+                     class="w-6">
+            </button>
+            <p class="ml-1">3.5k</p>
+            <button class="bg-black text-white w-24 ml-4 h-8 rounded-full">View more</button>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar -->
+    <div class="bg-black w-full h-auto md:h-24 flex flex-col md:flex-row items-center px-4 py-2">
+        <div class="flex justify-between w-full md:w-auto">
+            <a href="home.html">
+                <img src="/Image/logo.png" alt="logo" class="border border-black rounded-full w-24 h-16">
+            </a>
+            <h1 class="text-white text-2xl italic font-serif ml-4 mt-4 md:ml-2">R8TIFY.com</h1>
+            <!-- Hamburger Menu -->
+            <button id="menu-toggle" class="text-white text-3xl md:hidden ml-auto">
+                ☰
+            </button>
+        </div>
+        
+        <div id="menu" class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center mt-4 md:mt-0">
+            <div class="flex flex-col md:flex-row md:ml-96 w-full md:w-auto items-center">
+                <div class="flex w-full md:w-auto">
+                    <input type="text" placeholder="Search" class="h-10 w-full md:w-[400px] rounded-l-full pl-4 text-lg">
+                    <button class="h-10 w-12 bg-white border-2 border-gray-300 rounded-r-full flex items-center justify-center">
+                        <img src="/Image/search.png" alt="Search" class="h-6 w-6">
+                    </button>
+                </div>
+                <a href="categories.html" class="text-lg font-bold rounded px-4 h-10 py-1 bg-white mt-2 md:mt-0 md:ml-24">Categories</a>
+                <a href="#Trending Insightssss" class="text-lg font-bold rounded px-4 h-10 py-1 bg-white mt-2 md:mt-0 md:ml-24">Trending Insights</a>
+            </div>
+            <div class="flex flex-col md:flex-row items-center mt-4 ml-4 md:mt-0">
+                <h4 class="text-white">Brian O'Conner</h4>
+                <div class="bg-gray-400 w-12 h-12 rounded-full ml-4">
+                    <a href="profile.html"><img src="/Image/brian.jpeg" alt="" class="rounded-full"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="text-center mt-8">
+        <img src="/Image/review-6640064_1280.jpg" alt="image" class="mx-auto">
+        <h1 class="text-5xl mt-4">Reviews that matter, choices that count.</h1>
+        <button class="bg-black text-white text-xl font-bold w-80 h-14 mt-4 rounded-full">
+            <a href="review.html">Write a Review</a>
+        </button>
+    </div>
+
+    <!-- Popular Categories -->
+    <div class="text-center mt-12" id="Trending Insightssss">
+        <p class="text-2xl">Popular Categories</p>
+        <p class="text-lg">Browse our most popular categories</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 px-8">
+            <div class="bg-black w-full h-64 rounded-xl flex flex-col items-center">
+                <a href="phones.html">
+                    <img src="/Image/phone.jpeg" alt="Smartphones" class="w-48 h-48 rounded-full mt-2">
+                    <p class="text-white font-bold">Smartphones</p>
+                </a>
+            </div>
+            <div class="bg-black w-full h-64 rounded-xl flex flex-col items-center">
+                <a href="console.html">
+                    <img src="/Image/console.jpeg" alt="Gaming Consoles" class="w-48 h-48 rounded-full mt-2">
+                    <p class="text-white font-bold">Gaming Consoles</p>
+                </a>
+            </div>
+            <div class="bg-black w-full h-64 rounded-xl flex flex-col items-center">
+                <a href="laptops.html">
+                    <img src="/Image/_.gif" alt="Laptops" class="w-48 h-48 rounded-full mt-2">
+                    <p class="text-white font-bold">Laptops</p>
+                </a>
+            </div>
+            <div class="bg-black w-full h-64 rounded-xl flex flex-col items-center">
+                <a href="camera.html">
+                    <img src="/Image/camera.jpeg" alt="Cameras" class="w-48 h-48 rounded-full mt-2">
+                    <p class="text-white font-bold">Cameras</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-black w-full h-auto text-white px-4 py-8 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left text-sm md:text-base">
+
+            <!-- Logo & Contact -->
+            <div class="flex flex-col items-center md:items-start">
+                <img src="/Image/logo.png" alt="logo" class="border border-black rounded-full w-20 h-12">
+                <p class="mt-2">
+                    R8tify Inc.<br>
+                    Techno city, Trivandrum, 1018<br><br>
+                    Email: <a href="mailto:r8tifyinc@gmail.com" class="text-blue-500">r8tifyinc@gmail.com</a>
+                </p>
+            </div>
+
+            <!-- About Us -->
+            <div>
+                <p class="text-2xl md:text-2xl">About us</p>
+                <p class="mt-2">
+                    At R8TIFY, we empower confident decisions through trusted reviews. Our platform connects you with real user insights,<br>
+                    helping products shine and guiding you to the right choice.<br>
+                    Discover better. Choose smarter.
+                </p>
+                <hr class="my-4 border-gray-600">
+            </div>
+
+            <!-- Social Media -->
+            <div class="ml-20">
+                <p>Follow us on:</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-2">
+                    <a href="#" class="pt-2"><img src="/Image/instagram.webp" alt="Instagram" class="w-16"></a>
+                    <a href="#"><img src="/Image/black linkedin app icon.jpeg" alt="LinkedIn" class="w-16"></a>
+                    <a href="#"><img src="/Image/Twitter.jpeg" alt="Twitter" class="w-16"></a>
+                    <a href="#"><img src="/Image/facebook ☆ black.jpeg" alt="Facebook" class="w-16"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-6 text-sm md:text-base">&copy; 2025 R8TIFY, Inc. All rights reserved.</p>
+    </footer>
+
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>

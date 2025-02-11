@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar -->
+    <div class="bg-black w-full h-auto md:h-24 flex flex-col md:flex-row items-center px-4 py-2">
+        <div class="flex justify-between w-full md:w-auto">
+            <a href="home1.html">
+                <img src="/Image/logo.png" alt="logo" class="border border-black rounded-full w-24 h-16">
+            </a>
+            <h1 class="text-white text-2xl italic font-serif ml-4 mt-4 md:ml-2">R8TIFY.com</h1>
+            <!-- Hamburger Menu -->
+            <button id="menu-toggle" class="text-white text-3xl md:hidden ml-auto">
+                ☰
+            </button>
+        </div>
+        
+        <div id="menu" class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center mt-4 md:mt-0">
+            <div class="flex flex-col md:flex-row md:ml-96 w-full md:w-auto items-center">
+                <div class="flex w-full md:w-auto">
+                    <input type="text" placeholder="Search" class="h-10 w-full md:w-[400px] rounded-l-full pl-4 text-lg">
+                    <button class="h-10 w-12 bg-white border-2 border-gray-300 rounded-r-full flex items-center justify-center">
+                        <img src="/Image/search.png" alt="Search" class="h-6 w-6">
+                    </button>
+                </div>
+                <a href="categories1.html" class="text-lg font-bold rounded px-4 h-10 py-1 bg-white mt-2 md:mt-0 md:ml-24">Categories</a>
+                <a href="#Trending Insightssss" class="text-lg font-bold rounded px-4 h-10 py-1 bg-white mt-2 md:mt-0 md:ml-24">Trending Insights</a>
+                <a href="signup.html"><div class="text-lg font-bold rounded px-4 ml-2  h-10 py-1 bg-white  mt-2 md:mt-0 md:ml-24">Sign up</div></a>
+
+            </div>
+        </div>
+    </div>
+<!-- Products section -->
+<div class="flex flex-col md:flex-row justify-between items-center text-center h-auto p-6">
+    <p class="text-4xl mt-3">Products</p>
+    <a href="phones1.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Smartphones</div></a>
+    <a href="laptops1.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Laptops</div></a>
+    <a href="console1.html"><div class="bg-black w-52 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Gaming Consoles</div></a>
+    <a href="camera1.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Camera</div></a>
+    <a href="speakers1.html"><div class="bg-black w-44 h-12 text-2xl pt-2 rounded-full mt-3 text-white">Speakers</div></a>
+</div>
+
+    <!-- JavaScript for Navbar Toggle -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    </script>
+
+    
+    <!-- Top Categories -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-8 px-8">
+        <div class="bg-black rounded-xl p-4 flex flex-col items-center">
+            <a href="phones1.html">
+                <img src="/Image/phone.jpeg" alt="Smartphones" class="w-48 h-48 rounded-full">
+                <p class="text-white font-bold mt-2">Smartphones</p>
+            </a>
+        </div>
+        <div class="bg-black rounded-xl p-4 flex flex-col items-center">
+            <a href="console1.html">
+                <img src="/Image/console.jpeg" alt="Gaming Consoles" class="w-48 h-48 rounded-full">
+                <p class="text-white font-bold mt-2">Gaming Consoles</p>
+            </a>
+        </div>
+        <div class="bg-black rounded-xl p-4 flex flex-col items-center">
+            <a href="laptops1.html">
+                <img src="/Image/_.gif" alt="Laptops" class="w-48 h-48 rounded-full">
+                <p class="text-white font-bold mt-2">Laptops</p>
+            </a>
+        </div>
+        <div class="bg-black rounded-xl p-4 flex flex-col items-center">
+            <a href="camera1.html">
+                <img src="/Image/camera.jpeg" alt="Cameras" class="w-48 h-48 rounded-full">
+                <p class="text-white font-bold mt-2">Cameras</p>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Write a Review Button -->
+    <div class="text-center mt-12">
+        <a href="" class="bg-black text-white text-xl font-bold px-8 py-4 rounded-full">Write a Review</a>
+<!-- Reviewwwww -->
+    </div>
+    
+    <!-- Reviews -->
+    <div class="max-w-4xl mx-auto mt-8 space-y-4">
+        <div class="border-2 border-black rounded-3xl p-4">
+            <div class="flex items-center space-x-4">
+                <img src="/Image/Han Lue.jpeg" alt="" class="rounded-full w-14 h-16">
+                <div>
+                    <p class="text-2xl">Han Lue</p>
+                    <img class="w-40" src="/Image/1starr.png" alt="">
+                </div>
+                <div class="text-center text-red-400 text-2xl font-bold">Samsung Galaxy S23 Ultra<br>
+                    <span class="text-black text-lg font-bold">Very poor UX choices</span>
+                </div>
+            </div>
+            <p class="mt-2 text-lg">The camera quality is worse than my five year old Oppo Find X2 Pro. You cannot turn off most 'image enhancements' and third-party camera apps aren't allowed to make use of the full sensor.</p>
+            <div class="flex items-center mt-2">
+                <img src="/Image/Like silhouette.jpeg" alt="like" class="w-6">
+                <p class="ml-1">3.5k</p>
+            </div>
+        </div>
+        <div class="border-2 border-black rounded-3xl p-4">
+            <div class="flex items-center space-x-4">
+                <img src="/Image/letty.jpeg" alt="" class="rounded-full w-14 h-16">
+                <div>
+                    <p class="text-2xl">Letty Ortiz</p>
+                    <img class="w-40" src="/Image/3starr.png" alt="">
+                </div>
+                <div class="text-center text-red-400 text-2xl font-bold">Olitech EasyFlip 2<br>
+                    <span class="text-black text-lg font-bold">Well done Olitech!</span>
+                </div>
+            </div>
+            <p class="mt-2 text-lg">Olitech has great customer service when you need it and prompt delivery. Cannot remember when I bought my first Olitech phone, but a good while back. Nice to get your hassles sorted.</p>
+            <div class="flex items-center mt-2">
+                <img src="/Image/Like silhouette.jpeg" alt="like" class="w-6">
+                <p class="ml-1">3.5k</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

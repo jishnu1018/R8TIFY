@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="mx-auto p-6  w-[1300px]">
+
+    <h2 class="text-2xl font-bold text-center mb-6">Manage Products</h2>
+
+    <!-- Products Table -->
+    <div class="bg-white shadow-lg rounded-lg">
+      <table class="min-w-full table-auto">
+          <tr class="bg-gray-200">
+            <th class="px-4 py-2 text-left">Product ID</th>
+            <th class="px-4 py-2 text-left">Product Name</th>
+            <th class="px-4 py-2 text-left">Price</th>
+            <th class="px-4 py-2 text-left">Stock</th>
+            <th class="px-4 py-2 text-left">Action</th>
+          </tr>
+
+          <tr>
+            <td class="px-4 py-2">1</td>
+            <td class="px-4 py-2">Product A</td>
+            <td class="px-4 py-2">$100</td>
+            <td class="px-4 py-2">50</td>
+            <td class="px-4 py-2">
+              <button class="bg-green-500 rounded-md hover:bg-green-700  text-white px-3 py-1">Edit</button>
+              <button class="bg-red-500 text-white  rounded-md px-3 py-1 hover:bg-red-700">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2">2</td>
+            <td class="px-4 py-2">Product B</td>
+            <td class="px-4 py-2">$50</td>
+            <td class="px-4 py-2">20</td>
+            <td class="px-4 py-2">
+                <button class="bg-green-500 rounded-md hover:bg-green-700  text-white px-3 py-1">Edit</button>
+                <button class="bg-red-500 text-white  rounded-md px-3 py-1 hover:bg-red-700">Delete</button>
+            </td>
+          </tr>
+
+      </table>
+    </div>
+
+  </div>
+  <button class=" text-white text-xl bg-black w-40 h-14 mt-4 rounded-full font-bold ml-[1390px]">
+    <a href="admin.html">Submit</a>
+</button>
+</body>
+</html>
