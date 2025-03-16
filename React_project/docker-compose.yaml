@@ -1,0 +1,38 @@
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_volume:/data/db
+  api:
+    image: api
+    container_name: api
+    depends_on:
+      - mongodb
+    build: 
+      context: Backend
+      dockerfile: ./dockerfile
+    ports:
+      - 9001-9001
+
+  ui:
+    image: ui
+    container_name: ui
+    depends_on:
+      - api
+    build:
+      context: R8tify
+      dockerfile: ./dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./R8tify:/app  # Syncs local files with container
+      - /app/node_modules  # Prevents overwriting node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true  # Enables live reload for React
+
+volumes:
+  mongo_volume:
