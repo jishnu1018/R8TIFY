@@ -41,7 +41,7 @@ R8tify is a product review platform designed for electronic products such as cam
 
 1. **Clone the Repository:**  
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:jishnu1018/R8TIFY.git
    ```
 
 2. **Docker Setup:**  
